@@ -10,7 +10,7 @@ jobs:
       - uses: actions/setup-java@v4
         with:
           distribution: 'temurin'
-          java-version: '17'
+          java-version: '21'
       - uses: Xotabu4/selenoid-github-action@v2
       - run: mvn test -Dselenide.remote=http://localhost:4444/wd/hub
 
